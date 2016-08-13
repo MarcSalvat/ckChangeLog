@@ -11,15 +11,19 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 24
+    buildToolsVersion '24.0.1'
 
     defaultConfig {
-        versionName "1.2.2"
-
-        minSdkVersion 4
+        versionName "1.2.2.AppCompat"
+        minSdkVersion 7
     }
 }
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.1.1'
+}
+
 
 project.ext {
     pom = [

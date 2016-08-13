@@ -11,21 +11,21 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 24
+    buildToolsVersion '24.0.1'
 
     defaultConfig {
         versionCode 1
         versionName "1.0"
 
         minSdkVersion 7
-        targetSdkVersion 21
+        targetSdkVersion 24
     }
 }
 
 dependencies {
     compile project(':ckChangeLog')
-    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:support-v4:24.1.1'
 }
 
 
